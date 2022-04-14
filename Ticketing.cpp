@@ -25,7 +25,7 @@ int main(void) {
 	const int BABY = 15000;
 	const int FREEOFCHARGE = 0;	
 	int ticketPrice[10];
-	int	ticketNum = 1; // fixed
+	int ticketNum = 1; // fixed
 	int ridesOrNot;
 	int specialOffer[10];
 	int sumPrice;
@@ -158,7 +158,7 @@ int main(void) {
 	
 	for(index; index < i; index++) {
 		if(ticketType[index] == 1) {
-			printf("%s""All   ");
+			printf("All   ");
 		} else if (ticketType[index] == 2) {
 			printf("Park  ");
 		}
