@@ -126,19 +126,14 @@ int main(void) {
 	if(specialOffer[i] == 1) {
 		ticketPrice[i];
 	} else if(specialOffer[i] == 2) {
-		specialOffer[i] = 2;
 		ticketPrice[i]*=0.5; 
 	} else if (specialOffer[i] == 3) {
-		specialOffer[i] = 3;
 		ticketPrice[i]*=0.5; 
 	} else if (ticketType[i] == 1 && specialOffer[i] == 4) {
-		specialOffer[i] = 4;
 		ticketPrice[i]*=0.49; 
 	} else if (ticketType[i] == 1 && specialOffer[i] == 5) {
-		specialOffer[i] = 5;
 		ticketPrice[i]*=0.5; 
 	} else if (ticketType[i] == 1 && specialOffer[i] == 6) {
-		specialOffer[i] = 6;
 		ticketPrice[i]*=0.3;
 	}
 	
