@@ -1,5 +1,7 @@
 #include <stdio.h>
-// 오류부분 주석 (향후 수정)
+// 1. 오류부분 주석 (향후 수정)
+// 2. const int 로 반복횟수 처음입력받은 값으로 고정
+// 3. 동반 1인 할인은 중복 적용이 가능한가?
 int main(void) {
 	int ticketType[10];
 	int ticketTime[10];
