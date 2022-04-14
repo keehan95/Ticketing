@@ -1,6 +1,5 @@
 #include <stdio.h>
-// 한국어로 수정
-// 오류부분 주석함 
+// 오류부분 주석 (향후 수정)
 int main(void) {
 	int ticketType[10];
 	int ticketTime[10];
