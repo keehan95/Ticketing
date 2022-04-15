@@ -32,16 +32,21 @@ int main(void) {
 	int continueOrNot;
 	int ticket[10];
 	int index = 0;
-	const char* ticketType1 = "All";
-	const char* ticketType2 = "Park";
-	const char* ticketTime1 = "1Day";
-	const char* ticketTime2 = "After4";
-	const char* specialOffer1 = "None";
-	const char* specialOffer2 = "Disabled";
-	const char* specialOffer3 = "Veteran";
-	const char* specialOffer4 = "Military";
-	const char* specialOffer5 = "Pregnant";
-	const char* specialOffer6 = "Multiple";
+	const char* TICKETTYPE1 = "All";
+	const char* TICKETTYPE2 = "Park";
+	const char* TICKETTIME1 = "1Day";
+	const char* TICKETTIME2 = "After4";
+	const char* SPECIALOFFER1 = "None";
+	const char* SPECIALOFFER2 = "Disabled";
+	const char* SPECIALOFFER3 = "Veteran";
+	const char* SPECIALOFFER4 = "Military";
+	const char* SPECIALOFFER5 = "Pregnant";
+	const char* SPECIALOFFER6 = "Multiple";
+	const char* MANAGE1 = "Baby";
+	const char* MANAGE2 = "Child";
+	const char* MANAGE3 = "Youth";
+	const char* MANAGE4 = "Adult";
+	const char* MANAGE5 = "Senior";
 
 	for(int index = 0; index < 10; index++) { // the max number of repition is 10 
 	printf("Select Type of Tickets\n1.All\n2.Park\n");
@@ -122,6 +127,7 @@ int main(void) {
 	//the number of Tickets(fixed)
 	printf("How many tickets? (max 10)\n");
 	printf("1\n");
+	
 	//Special Offer
 	printf("Special Offer\n1.None\n2.Disabled\n3.Veteran\n4.Military\n5.Pregnant\n6.Multiple\n");
 	scanf("%d", &specialOffer[i]);	
@@ -161,38 +167,51 @@ int main(void) {
 	printf("===================== LOTTE WORLD =====================\n");
 	for(index = 0; index < i; index++) {
 		if(ticketType[index] == 1) {
-			printf("%s\t", ticketType1);	
+			printf("%s\t", TICKETTYPE1);	
 		}
 		if(ticketType[index] == 2) {
-			printf("%s\t", ticketType2);	
+			printf("%s\t", TICKETTYPE2);	
 		}
 		
 		if(ticketTime[index] == 1) {
-			printf("%s\t", ticketTime1);
+			printf("%s\t", TICKETTIME1);
 		}
 		if(ticketTime[index] == 2) {
-			printf("%s\t", ticketTime2);
+			printf("%s\t", TICKETTIME2);
 		}
-		printf("X\t%d\t", ticketNum);
+		
+		if(manAge[i] < 3) {
+			printf("%s\t", MANAGE1);
+		} else if(manAge[i] >= 3 && manAge[i] < 12) {
+			printf("%s\t", MANAGE2);
+		} else if(manAge[i] >= 12 && manAge[i] < 18) {
+			printf("%s\t", MANAGE3);
+		} else if(manAge[i] >= 18 && manAge[i] < 65) {
+			printf("%s\t", MANAGE4);
+		} else if(manAge[i] >= 65) {
+			printf("%s\t", MANAGE5);
+		}
+
+		printf(" X\t%d\t", ticketNum);
 		printf("%d\t",ticketPrice[index]);
 		
 		if(specialOffer[index] == 1) {
-			printf("%s\n", specialOffer1);
+			printf("%s\n", SPECIALOFFER1);
 		}
 		if(specialOffer[index] == 2) {
-			printf("%s\n", specialOffer2);
+			printf("%s\n", SPECIALOFFER2);
 		}
 		if(specialOffer[index] == 3) {
-			printf("%s\n", specialOffer3);
+			printf("%s\n", SPECIALOFFER3);
 		}
 		if(specialOffer[index] == 4) {
-			printf("%s\n", specialOffer4);
+			printf("%s\n", SPECIALOFFER4);
 		}
 		if(specialOffer[index] == 5) {
-			printf("%s\n", specialOffer5);
+			printf("%s\n", SPECIALOFFER5);
 		}
 		if(specialOffer[index] == 6) {
-			printf("%s\n", specialOffer6);
+			printf("%s\n", SPECIALOFFER6);
 		}	
 	}
 	printf("The total price is %d \n",sumPrice);
