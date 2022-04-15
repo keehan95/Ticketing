@@ -157,21 +157,26 @@ int main(void) {
 	} // for statement ends. 
 	printf("Thank you\n");
 	printf("===================== LOTTE WORLD =====================\n");
-	
+
 	for(index; index < i; index++) {
-		if(ticketType[index] == 1) {
-			printf("All   ");
-		} else if (ticketType[index] == 2) {
-			printf("Park  ");
-		}
-		if(ticketTime[index] == 1) {
-			printf("Day    ");
-		} else if (ticketTime[index] == 2) {
-			printf("Night  ");
-		}
-		printf("X    %d     ", ticketNum);
-		printf("%d won\t", ticketPrice[index]);
-		printf("\n");
+	printf("%d\t%d\t%d\t%d\t%d\n",ticketType[index],ticketTime[index],ticketNum,ticketPrice[index],specialOffer[index]);
+	}
+	
+// 	for(index; index < i; index++) {
+// 		if(ticketType[index] == 1) {
+// 			printf("All   ");
+// 		} else if (ticketType[index] == 2) {
+// 			printf("Park  ");
+// 		}
+// 		if(ticketTime[index] == 1) {
+// 			printf("Day    ");
+// 		} else if (ticketTime[index] == 2) {
+// 			printf("Night  ");
+// 		}
+// 		printf("X    %d     ", ticketNum);
+// 		printf("%d won\t", ticketPrice[index]);
+// 		printf("\n");
+		
 		
 //		Error; needs to be fixed
 
