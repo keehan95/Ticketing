@@ -193,7 +193,6 @@ int main(void) {
 //		} else if (ticketType[index] == 1 && specialOffer[index] == 6) {
 //			printf("multiple             ");
 //		}
-	}
 	printf("The total price is %d \n",sumPrice);
 	printf("====================================================\n");
 }
